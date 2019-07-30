@@ -5,6 +5,12 @@
     min-width: 99%;
     height: 99vh;
     height: auto;
+    font-family: $font-content;
+    line-height: 20px;
+
+    .post-title {
+        font-family: $font-header;
+    }
 
     
     div {

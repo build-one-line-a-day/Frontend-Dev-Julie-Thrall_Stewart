@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './post.scss';
-import { Card, Image, Icon, Grid } from 'semantic-ui-react';
+import { Card, Image, Grid } from 'semantic-ui-react';
 
 const postAPI = 'https://jsonplaceholder.typicode.com/posts'
 
@@ -38,7 +38,7 @@ console.log(content)
     {content.map((item, index) => {
  return (<Card className="card-container" key={index}>
   <Card.Content>
-  <Card.Header>{item.title}</Card.Header>
+  <Card.Header><span className="post-title">{item.body}</span></Card.Header>
   <Card.Meta>
     <span className='date'>Date created</span>
   </Card.Meta>
